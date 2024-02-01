@@ -1,0 +1,45 @@
+{
+    // Use IntelliSense para saber los atributos posibles.
+    // Mantenga el puntero para ver las descripciones de los existentes atributos.
+    // Para más información, visite: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug executable 'rust-user-periodic-task-asignment'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--bin=rust-user-periodic-task-asignment",
+                    "--package=rust-user-periodic-task-asignment"
+                ],
+                "filter": {
+                    "name": "rust-user-periodic-task-asignment",
+                    "kind": "bin"
+                }
+            },
+            "args": [2],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in executable 'rust-user-periodic-task-asignment'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--bin=rust-user-periodic-task-asignment",
+                    "--package=rust-user-periodic-task-asignment"
+                ],
+                "filter": {
+                    "name": "rust-user-periodic-task-asignment",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        }
+    ]
+}
